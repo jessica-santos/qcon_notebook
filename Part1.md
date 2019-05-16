@@ -73,12 +73,47 @@ Para facilitar vamos dividir a criação da rede em 5 etapas:
 Antes de ver cada uma delas, vamos fazer todos os imports necessários para o funcionamento do código:
 
 ```python
+import warnings
+warnings.filterwarnings('ignore')
 
+import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+import time
+import os
+import datetime
+
+from keras import datasets, Model
+from keras.layers.convolutional import Conv2D
+from keras.layers.convolutional import MaxPooling2D
+from keras.layers import Flatten
+from keras.layers.core import Dropout
+from keras.layers.core import Dense
+from keras.optimizers import Adam
+from keras import Sequential
+from keras.utils import to_categorical
+from keras.callbacks import ModelCheckpoint, EarlyStopping
+from keras.applications import VGG16
+from keras.preprocessing.image import ImageDataGenerator
+from keras.models import load_model
+from keras import backend
+import tensorflow as tf
+
+from keras.preprocessing.image import load_img, img_to_array
+```
 
 ### 1. Input de Dados
 
+Existem várias formas de inputar os dados para treinamento, vamos usar o `Image Data Generator` para ler as imagens a partir do disco.
+Vamos primeiramente instanciar o generator, nesta etap
+```python
+# aqui definimos as transformações que serão aplicadas na imagem e a % de dados 
+# que serão usados para validação
+data_generator = ImageDataGenerator(rescale=1./255, validation_split=0.30)
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzM4NjY3ODgsLTE1MDkwMTIzMTFdfQ
-==
+eyJoaXN0b3J5IjpbLTg5NjU1OTU0NiwtMTUwOTAxMjMxMV19
 -->
