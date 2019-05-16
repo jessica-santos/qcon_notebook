@@ -37,7 +37,7 @@ CNN é uma categoria de redes de deep learning normalmente aplicadas para reconh
 
 ### Como elas funcionam?
 
-SãFiltros convolucionais são usados para extrair features de imagens.
+São baseadas principalmente em Filtros Convolucionais que extraem características de imagens. Esses filtros já são usados há muito tempos na área de Processamento de Imagens, a ideia é que 
 
 ![drawing](https://camo.githubusercontent.com/7513873c1d99957d9604d134564d7fc61d321fa4/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a54416f336173656c4a4e5677724c4c723635344d79672e676966)
 
@@ -47,5 +47,5 @@ Nas redes convolucionais esses filtros são aplicados em várias camadas:
 
 Os valores dos filtros são aprendidos, portanto a própria rede aprende quais características são relevantes.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mzc0NzQxMjAsMTg4MDk5NzgwMl19
+eyJoaXN0b3J5IjpbLTU2NjY0OTkyLDE4ODA5OTc4MDJdfQ==
 -->
