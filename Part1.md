@@ -58,5 +58,5 @@ Nas redes convolucionais esses filtros são aplicados em várias camadas. Além 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDkwMTIzMTEsLTgwNzkwNjU5Ml19
+eyJoaXN0b3J5IjpbLTE1MDkwMTIzMTFdfQ==
 -->
