@@ -11,7 +11,7 @@ Nós trabalhamos na [NeuralMed](neuralmed.ai), uma startup que usa Inteligência
 
 - Alguns pontos de atenção e desafios encontrados
 
-Por trabalharmos com imagens médicas, esse será nosso caso de uso, mais especificamente imagens de raio-x de tórax. Porém, todas as redes construídas podem ser aplicadas em outros tipos de imagens, como classificação de gatos e cachorros, por exemplo.
+Por trabalharmos com imagens médicas esse será nosso caso de uso, mais especificamente imagens de raio-x de tórax. Porém, todas as redes construídas podem ser aplicadas em outros tipos de imagens, como classificação de gatos e cachorros, por exemplo.
 
 <img src=https://upload.wikimedia.org/wikipedia/commons/a/a1/Normal_posteroanterior_%28PA%29_chest_radiograph_%28X-ray%29.jpg width=350/>
 
@@ -117,5 +117,5 @@ A próxima etapa é passar quais dados serão lidos
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MjMwNDMyMV19
+eyJoaXN0b3J5IjpbMTU0NjA4MjkwOSwxODcyMzA0MzIxXX0=
 -->
