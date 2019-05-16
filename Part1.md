@@ -37,17 +37,17 @@ CNN é uma categoria de redes de deep learning normalmente aplicadas para reconh
 
 ### Como elas funcionam?
 
-São baseadas principalmente em Filtros Convolucionais que extraem características de imagens. Esses filtros já são usados há muito tempos na área de Processamento de Imagens, a ideia é que ao aplicar essas matrizes sobre a imagem com valores padrões que consigam obter as características 
+São baseadas principalmente em Filtros Convolucionais que extraem características de imagens. Esses filtros já são usados há muito tempos na área de Processamento de Imagens, a ideia é que ao aplicar essas matrizes sobre a imagem se consiga obter as características desejadas. O gif abaixo mostra os principais filtros (ou kernels) para extração de bordas.
 
 ![drawing](https://camo.githubusercontent.com/7513873c1d99957d9604d134564d7fc61d321fa4/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a54416f336173656c4a4e5677724c4c723635344d79672e676966)
 *Fonte: [# Gentle Dive into Math Behind Convolutional Neural Networks](https://towardsdatascience.com/gentle-dive-into-math-behind-convolutional-neural-networks-79a07dd44cf9)*
 
-Nas redes convolucionais esses filtros são aplicados em várias camadas:
+Nas redes convolucionais esses filtros são aplicados em várias camadas. Além disso, Os valores dos filtros são aprendidos, portanto a própria rede aprende quais características são relevantes.
 
 ![](https://camo.githubusercontent.com/385e37807ce5f3edce3890c52e2cc5cfed2bd808/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313630302f312a5f333445747267596b366351786c4a326272353148512e676966)
 
-Os valores dos filtros são aprendidos, portanto a própria rede aprende quais características são relevantes.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MTExNDk1NywtNDcyMzc1NjU5LDE4OD
-A5OTc4MDJdfQ==
+eyJoaXN0b3J5IjpbNzU4MDUxNzAzLC00NzIzNzU2NTksMTg4MD
+k5NzgwMl19
 -->
