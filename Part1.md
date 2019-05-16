@@ -14,6 +14,7 @@ Nós trabalhamos na [NeuralMed](neuralmed.ai), uma startup que usa Inteligência
 Por trabalharmos com imagens médicas, esse será nosso caso de uso, mais especificamente imagens de raio-x de tórax. Porém, todas as redes construídas podem ser aplicadas em outros tipos de imagens, como classificação de gatos e cachorros, por exemplo.
 
 ![Exemplo de Raio-X de tórax](https://upload.wikimedia.org/wikipedia/commons/a/a1/Normal_posteroanterior_%28PA%29_chest_radiograph_%28X-ray%29.jpg)
+https://pbs.twimg.com/media/DtgmEDSV4AAIjLm.jpg:small
 *Exemplo de raio-x de tórax*
 
 
@@ -29,7 +30,8 @@ Um artigo recente publicado no [medium]([https://towardsdatascience.com/which-de
 E porque então usar Keras? Keras roda em cima do Tensorflow e de vantagens possui uma linguagem muito mais amigável, fácil e rápido de escrever os modelos (muito mais fácil!). 
 O Tensorflow anunciou recentemente sua versão [2.0](https://www.tensorflow.org/alpha), que usa Keras como sua API de alto nível já integrada dentro do `tf.keras`. Portanto, continuarem usando o Keras como framework para Deep Learning. (Ainda mais com esse novo mascote!)
 
-![enter image description here](https://pbs.twimg.com/media/DtgmEDSV4AAIjLm.jpg:small)
+<img src=https://pbs.twimg.com/media/DtgmEDSV4AAIjLm.jpg:small width=300/>
+
 *Keras mascote: Prof Keras*
 
 
@@ -54,5 +56,5 @@ Nas redes convolucionais esses filtros são aplicados em várias camadas. Além 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUyOTgzODkwLDM2Mzk3ODQyXX0=
+eyJoaXN0b3J5IjpbMTMxODQzOTU2MSwzNjM5Nzg0Ml19
 -->
