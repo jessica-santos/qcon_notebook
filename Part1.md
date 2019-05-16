@@ -25,7 +25,7 @@ Por trabalharmos com imagens médicas, esse será nosso caso de uso, mais especi
 Um artigo recente publicado no [medium]([https://towardsdatascience.com/which-deep-learning-framework-is-growing-fastest-3f77f14aa318](https://towardsdatascience.com/which-deep-learning-framework-is-growing-fastest-3f77f14aa318)) fez uma comparação entre as principais bibliotecas para Deep Learning e mostrou que Tensorflow é o que mais cresce e o que apresenta a maior demanda.
 
 ![enter image description here](https://cdn-images-1.medium.com/max/1600/1*c67KMUJj3waIlxnUJ1enTw.png)
-*Resultado do estudo realizado por [Jeff Hale]([https://towardsdatascience.com/which-deep-learning-framework-is-growing-fastest-3f77f14aa318)
+*Resultado do estudo realizado por [Jeff Hale]([https://towardsdatascience.com/which-deep-learning-framework-is-growing-fastest-3f77f14aa318)*
 
 E porque então usar Keras? Keras roda em cima do Tensorflow e de vantagens possui uma linguagem muito mais amigável, fácil e rápido de escrever os modelos (muito mais fácil!). 
 O Tensorflow anunciou recentemente sua versão [2.0](https://www.tensorflow.org/alpha), que usa Keras como sua API de alto nível já integrada dentro do `tf.keras`. Portanto, continuarem usando o Keras como framework para Deep Learning. (Ainda mais com esse novo mascote!)
@@ -58,5 +58,5 @@ Nas redes convolucionais esses filtros são aplicados em várias camadas. Além 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNzkwNjU5Ml19
+eyJoaXN0b3J5IjpbLTIyMTcxNDk3OCwtODA3OTA2NTkyXX0=
 -->
