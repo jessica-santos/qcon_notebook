@@ -45,9 +45,9 @@ São baseadas principalmente em Filtros Convolucionais que extraem característi
 Nas redes convolucionais esses filtros são aplicados em várias camadas. Além disso, os valores dos filtros são aprendidos, portanto a própria rede aprende quais características são relevantes para o problema em questão.
 
 ![](https://camo.githubusercontent.com/385e37807ce5f3edce3890c52e2cc5cfed2bd808/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313630302f312a5f333445747267596b366351786c4a326272353148512e676966)
-
+*Fonte: [](http://cs231n.github.io/convolutional-networks/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NTU0NDA1OCwtNDcyMzc1NjU5LDE4OD
-A5OTc4MDJdfQ==
+eyJoaXN0b3J5IjpbMzUzNjMwMzE3LDE5NTU1NDQwNTgsLTQ3Mj
+M3NTY1OSwxODgwOTk3ODAyXX0=
 -->
