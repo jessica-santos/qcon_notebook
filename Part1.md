@@ -33,11 +33,11 @@ O Tensorflow anunciou recentemente sua versão [2.0](https://www.tensorflow.org/
 
 ## Convolutional Neural Network
 
-CNN é uma categoria de redes de deep learning normal
+CNN é uma categoria de redes de deep learning normalmente aplicadas para reconhecimento de imagens. 
 
 ### Como elas funcionam?
 
--   Filtros convolucionais são usados para extrair features de imagens.
+SãFiltros convolucionais são usados para extrair features de imagens.
 
 ![drawing](https://camo.githubusercontent.com/7513873c1d99957d9604d134564d7fc61d321fa4/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a54416f336173656c4a4e5677724c4c723635344d79672e676966)
 
@@ -47,5 +47,5 @@ Nas redes convolucionais esses filtros são aplicados em várias camadas:
 
 Os valores dos filtros são aprendidos, portanto a própria rede aprende quais características são relevantes.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNzczNzg5NCwxODgwOTk3ODAyXX0=
+eyJoaXN0b3J5IjpbLTE4Mzc0NzQxMjAsMTg4MDk5NzgwMl19
 -->
