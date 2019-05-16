@@ -70,12 +70,15 @@ Para facilitar vamos dividir a criação da rede em 5 etapas:
 4. Treinamento
 5. Validação
 
-Antes de ver cada uma delas, vamos fazer todos os 
+Antes de ver cada uma delas, vamos fazer todos os imports necessários para o funcionamento do código:
+
+```python
+
 
 ### 1. Input de Dados
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTYyMDkzMzYsLTE1MDkwMTIzMTFdfQ
+eyJoaXN0b3J5IjpbLTE5NzM4NjY3ODgsLTE1MDkwMTIzMTFdfQ
 ==
 -->
