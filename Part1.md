@@ -13,7 +13,7 @@ Nós trabalhamos na [NeuralMed](neuralmed.ai), uma startup que usa Inteligência
 
 Por trabalharmos com imagens médicas, esse será nosso caso de uso, mais especificamente imagens de raio-x de tórax. Porém, todas as redes construídas podem ser aplicadas em outros tipos de imagens, como classificação de gatos e cachorros, por exemplo.
 
-![Exemplo de Raio-X de tórax](https://upload.wikimedia.org/wikipedia/commons/a/a1/Normal_posteroanterior_%28PA%29_chest_radiograph_%28X-ray%29.jpg)
+![Exemplo de Raio-X de tórax](https://upload.wikimedia.org/wikipedia/commons/a/a1/Normal_posteroanterior_%28PA%29_chest_radiograph_%28X-ray%29.jpg::smal)
 *Exemplo de raio-x de tórax*
 
 # Por que Tensorflow + Keras?
@@ -52,5 +52,5 @@ Nas redes convolucionais esses filtros são aplicados em várias camadas. Além 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYzOTc4NDJdfQ==
+eyJoaXN0b3J5IjpbLTE0MjUxNTA2MzMsMzYzOTc4NDJdfQ==
 -->
