@@ -33,6 +33,8 @@ O Tensorflow anunciou recentemente sua versão [2.0](https://www.tensorflow.org/
 
 ## Convolutional Neural Network
 
+CNN é uma categoria de redes de deep learning normal
+
 ### Como elas funcionam?
 
 -   Filtros convolucionais são usados para extrair features de imagens.
@@ -45,5 +47,5 @@ Nas redes convolucionais esses filtros são aplicados em várias camadas:
 
 Os valores dos filtros são aprendidos, portanto a própria rede aprende quais características são relevantes.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MDk5NzgwMl19
+eyJoaXN0b3J5IjpbLTczNzczNzg5NCwxODgwOTk3ODAyXX0=
 -->
