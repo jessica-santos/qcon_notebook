@@ -114,9 +114,9 @@ Neste exemplo colocamos apenas que a imagem precisa ser normalizada (dividindo p
 # que serão usados para validação
 data_generator = ImageDataGenerator(rescale=1./255, validation_split=0.30)
 ```
-A próxima etapa é passar quais dados serão lidos
+A próxima etapa é passar quais dados serão lidos. Aqui também há diferentes métodos possíveis, os mais comuns são `flow_from_dataframe` que lê as imagens de acordo com os caminhos específicados e
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDIzMzczNjBdfQ==
+eyJoaXN0b3J5IjpbMjEwMDUwMDQwNywtMTEwMjMzNzM2MF19
 -->
