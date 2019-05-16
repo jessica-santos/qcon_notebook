@@ -107,15 +107,15 @@ from keras.preprocessing.image import load_img, img_to_array
 
 Existem várias formas de inputar os dados para treinamento, vamos usar o `Image Data Generator` para ler as imagens a partir do disco.
 Vamos primeiramente instanciar o generator, nesta etapa existem vários parâmetros possíveis tanto para definir formato da imagem que será lida, quanto para aplicar transformações fazendo image augmentation, todos os parâmetros podem ser vistos [aqui](https://keras.io/preprocessing/image/).
-Neste exemplo colocamos apenas que a imagem precisa ser normalizada (dividindo por 255) e que 30% dos dados serão separados para validaç
+Neste exemplo colocamos apenas que a imagem precisa ser normalizada (dividindo por 255) e que 30% dos dados serão separados para validação:
 ```python
 # aqui definimos as transformações que serão aplicadas na imagem e a % de dados 
 # que serão usados para validação
 data_generator = ImageDataGenerator(rescale=1./255, validation_split=0.30)
 ```
+A próxima etapa é passar quais dados serão lidos
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTg2MDE5MDEsLTE1MDkwMTIzMTFdfQ
-==
+eyJoaXN0b3J5IjpbMTg3MjMwNDMyMSwtMTUwOTAxMjMxMV19
 -->
