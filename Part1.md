@@ -55,8 +55,16 @@ Nas redes convolucionais esses filtros são aplicados em várias camadas. Além 
 
 *Fonte: [CS231n Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/convolutional-networks/)*
 
+Vamos a prática!
 
+## Construindo uma CNN pra predizer lateralidade do raio-X
 
+Nosso desafio é criar uma rede para aprender se um raio X é lateral ou de frente:
+
+![](https://github.com/nandaw/qcon_notebook/raw/b237348ccff36ef09e1c4f3c76c4340fa942574c/lateral.png)
+
+Para facilitar vamos dividir a criação da rede em 4 etapas:
+1. Input de 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDkwMTIzMTFdfQ==
+eyJoaXN0b3J5IjpbMTI1ODcxOTc1NCwtMTUwOTAxMjMxMV19
 -->
