@@ -117,5 +117,5 @@ A próxima etapa é passar quais dados serão lidos
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MjMwNDMyMSwtMTUwOTAxMjMxMV19
+eyJoaXN0b3J5IjpbMTg3MjMwNDMyMV19
 -->
