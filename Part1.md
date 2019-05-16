@@ -63,8 +63,19 @@ Nosso desafio é criar uma rede para aprender se um raio X é lateral ou de fren
 
 ![](https://github.com/nandaw/qcon_notebook/raw/b237348ccff36ef09e1c4f3c76c4340fa942574c/lateral.png)
 
-Para facilitar vamos dividir a criação da rede em 4 etapas:
-1. Input de 
+Para facilitar vamos dividir a criação da rede em 5 etapas:
+1. Input de dados
+2. Definição da arquitetura
+3. Compilação do Modelo
+4. Treinamento
+5. Validação
+
+Antes de ver cada uma delas, vamos fazer todos os 
+
+### 1. Input de Dados
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1ODcxOTc1NCwtMTUwOTAxMjMxMV19
+eyJoaXN0b3J5IjpbLTEzMTYyMDkzMzYsLTE1MDkwMTIzMTFdfQ
+==
 -->
