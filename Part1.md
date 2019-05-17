@@ -130,7 +130,7 @@ validation_generator = data_generator.flow_from_directory(path, shuffle=True, se
                                     class_mode='categorical', batch_size=BATCH_SIZE, subset="validation")
 ```
 
-Os parâmetros que precisamos passar é o `BATCH_SIZE`, ou seja, quantos
+Aqui estamos definindo apenas o `BATCH_SIZE`, ou seja, quantas imagens serão lidas por bloco, se 
 
 ### 2. Definição da arquitetura
 
@@ -260,7 +260,7 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjc5MjEzMzYsLTg5MjA4ODAzNCwxOD
+eyJoaXN0b3J5IjpbLTIxMjE0MDk1NTYsLTg5MjA4ODAzNCwxOD
 Q1MjE2MDQzLDIzNzQ4ODY2MywxMDkyNjQ2MjQsNTUzODAwMDg4
 LC0xMTAyMzM3MzYwXX0=
 -->
