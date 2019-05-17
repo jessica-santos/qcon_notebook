@@ -237,6 +237,7 @@ y_pred = model.predict(image_test)
 
 ---- explicacao
 
+```python
 y_true = [0,0,0,0,0,1,1,1,1,1]
 labels = ['Frente', 'Lateral']
 figure = plt.figure(figsize=(20, 8))
@@ -251,7 +252,8 @@ for i in range(10):
     ax.set_title("{} ({})".format(labels[predict_index], 
                                   labels[true_index]),
                                   color=("green" if predict_index == true_index else "red"))
+ ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMzAzMTk0NSwxMDkyNjQ2MjQsNTUzOD
-AwMDg4LC0xMTAyMzM3MzYwXX0=
+eyJoaXN0b3J5IjpbMjM3NDg4NjYzLDEwOTI2NDYyNCw1NTM4MD
+AwODgsLTExMDIzMzczNjBdfQ==
 -->
