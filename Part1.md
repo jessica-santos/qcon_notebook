@@ -126,9 +126,11 @@ train_generator = data_generator.flow_from_directory(path, shuffle=True, seed=13
 
 validation_generator = data_generator.flow_from_directory(path, shuffle=True, seed=13,
                                     class_mode='categorical', batch_size=BATCH_SIZE, subset="validation")
-````
+```
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTQ3MzIxNTcsNTUzODAwMDg4LC0xMT
+eyJoaXN0b3J5IjpbLTE1MDI0OTQ3MTEsNTUzODAwMDg4LC0xMT
 AyMzM3MzYwXX0=
 -->
