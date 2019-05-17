@@ -255,7 +255,9 @@ for i in range(10):
                                   labels[true_index]),
                                   color=("green" if predict_index == true_index else "red"))
  ```
+ ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NTIxNjA0MywyMzc0ODg2NjMsMTA5Mj
-Y0NjI0LDU1MzgwMDA4OCwtMTEwMjMzNzM2MF19
+eyJoaXN0b3J5IjpbMTYzNzM4NzQ5NywxODQ1MjE2MDQzLDIzNz
+Q4ODY2MywxMDkyNjQ2MjQsNTUzODAwMDg4LC0xMTAyMzM3MzYw
+XX0=
 -->
