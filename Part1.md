@@ -116,9 +116,19 @@ data_generator = ImageDataGenerator(rescale=1./255, validation_split=0.30)
 ```
 A próxima etapa é passar quais dados serão lidos. Aqui também há diferentes métodos possíveis, os mais comuns são `flow_from_dataframe` que lê as imagens de acordo com os caminhos específicados em um dataframe, e `flow_from_directory`, que lê os arquivos direto de uma pasta, cada classe deve estar em uma pasta separada. 
 
+```python
+# para criar os generators precisamos definir o path da pasta raiz com as imagens e o tamanho da BATCH SIZE
+path = 'images-chest-orientation/train/'
+BATCH_SIZE = 50
 
+train_generator = data_generator.flow_from_directory(path, shuffle=True, seed=13,
+                                    class_mode='categorical', batch_size=BATCH_SIZE, subset="training")
+
+validation_generator = data_generator.flow_from_directory(path, shuffle=True, seed=13,
+                                    class_mode='categorical', batch_size=BATCH_SIZE, subset="validation")
+````
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1OTUyNTU3NCw1NTM4MDAwODgsLTExMD
-IzMzczNjBdfQ==
+eyJoaXN0b3J5IjpbLTE1NTQ3MzIxNTcsNTUzODAwMDg4LC0xMT
+AyMzM3MzYwXX0=
 -->
