@@ -221,7 +221,7 @@ model.fit_generator(generator=train_generator,
 
 Sempre importante separar uma quantidade de dados para testar o modelo no final. Aqui faremos apenas um teste visual para efeito de demonstração
 
-
+```python
 # Carregando imagens de teste
 import glob
 
@@ -233,8 +233,9 @@ model = load_model('chest_orientation_model.hdf5')
 image_test = np.array([img_to_array(load_img(image_name, target_size=(256, 256), color_mode='rgb'))/255 for image_name in test_set])
 
 y_pred = model.predict(image_test)
+```
 
-In [4]:
+---- explicacao
 
 y_true = [0,0,0,0,0,1,1,1,1,1]
 labels = ['Frente', 'Lateral']
@@ -251,6 +252,6 @@ for i in range(10):
                                   labels[true_index]),
                                   color=("green" if predict_index == true_index else "red"))
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1ODAwNjQ0OSwxMDkyNjQ2MjQsNTUzOD
+eyJoaXN0b3J5IjpbLTYzMzAzMTk0NSwxMDkyNjQ2MjQsNTUzOD
 AwMDg4LC0xMTAyMzM3MzYwXX0=
 -->
