@@ -208,7 +208,7 @@ early_stop = EarlyStopping(monitor='val_loss',
                                    verbose=1)
 ```
 
-Por fim, vamos ao treinamento em si
+Definidos os callbacks, vamos ao treinamento em si:
 
 ```python
 model.fit_generator(generator=train_generator,
@@ -263,7 +263,7 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NDkyNTI2LDYyNjY0NTgwMSwyMDA2NT
-c0NzUwLC04OTIwODgwMzQsMTg0NTIxNjA0MywyMzc0ODg2NjMs
-MTA5MjY0NjI0LDU1MzgwMDA4OCwtMTEwMjMzNzM2MF19
+eyJoaXN0b3J5IjpbMTU0MzMyOTQ3OCw2MjY2NDU4MDEsMjAwNj
+U3NDc1MCwtODkyMDg4MDM0LDE4NDUyMTYwNDMsMjM3NDg4NjYz
+LDEwOTI2NDYyNCw1NTM4MDAwODgsLTExMDIzMzczNjBdfQ==
 -->
