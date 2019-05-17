@@ -185,6 +185,7 @@ model.compile(loss='binary_crossentropy',
 ```
 
 Para este exemplo utilizamos o otimizador Adam, com os valores padrões (`lr=0.001, beta_1=0.9, beta_2=0.999`), você pode aprender mais sobre ele [aqui](https://towardsdatascience.com/adam-latest-trends-in-deep-learning-optimization-6be9a291375c). 
+Para o cálculo do loss usamos a função padrão para classificação binária: `binary_crossentropy`.
 
 ## Treinamento
 Como lemos os dados usando um generator, o fit do keras também será usando um  `fit_generator`.
@@ -206,7 +207,8 @@ early_stop = EarlyStopping(monitor='val_loss',
                                    mode='min',
                                    verbose=1)
 ```
---- explicaçao
+
+Por fim, vamos ao treinamento em si
 
 ```python
 model.fit_generator(generator=train_generator,
@@ -261,7 +263,7 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNzM4NzQ5MSw2MjY2NDU4MDEsMjAwNj
-U3NDc1MCwtODkyMDg4MDM0LDE4NDUyMTYwNDMsMjM3NDg4NjYz
-LDEwOTI2NDYyNCw1NTM4MDAwODgsLTExMDIzMzczNjBdfQ==
+eyJoaXN0b3J5IjpbMTE1NDkyNTI2LDYyNjY0NTgwMSwyMDA2NT
+c0NzUwLC04OTIwODgwMzQsMTg0NTIxNjA0MywyMzc0ODg2NjMs
+MTA5MjY0NjI0LDU1MzgwMDA4OCwtMTEwMjMzNzM2MF19
 -->
