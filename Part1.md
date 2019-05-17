@@ -181,7 +181,7 @@ model.compile(loss='binary_crossentropy',
              optimizer='adam',
              metrics=['accuracy'])
 ```
-
+---- explicacao
 
 ## Treinamento
 Como lemos os dados usando um generator, o fit do keras também será usando um  `fit_generator`.
@@ -191,7 +191,7 @@ Também usaremos alguns  `callbacks`:
 -   ModelCheckPoint para salvar o modelo que tiver o melhor loss durante o treinamento e,
 -   EarlyStop para interromper o treinamento caso a rede pare de aprender.
 
-``
+```python 
 checkpoint = ModelCheckpoint('chest_orientation_model.hdf5', 
                              monitor='val_loss', 
                              verbose=1, mode='min', 
@@ -202,9 +202,10 @@ early_stop = EarlyStopping(monitor='val_loss',
                                    patience=5,
                                    mode='min',
                                    verbose=1)
+```
+--- explicaçao
 
-In [10]:
-
+```python
 model.fit_generator(generator=train_generator,
                     steps_per_epoch = train_generator.samples//BATCH_SIZE,
                     validation_data=validation_generator,
@@ -212,58 +213,14 @@ model.fit_generator(generator=train_generator,
                     epochs= 50,
                     callbacks=[checkpoint, early_stop]
                     )
+```
 
-Epoch 1/50
-30/30 [==============================] - 544s 18s/step - loss: 2.7752 - acc: 0.7283 - val_loss: 0.3751 - val_acc: 0.8677
 
-Epoch 00001: val_loss improved from inf to 0.37515, saving model to chest_orientation_model.hdf5
-Epoch 2/50
-30/30 [==============================] - 603s 20s/step - loss: 0.1330 - acc: 0.9533 - val_loss: 0.1346 - val_acc: 0.9518
 
-Epoch 00002: val_loss improved from 0.37515 to 0.13461, saving model to chest_orientation_model.hdf5
-Epoch 3/50
-30/30 [==============================] - 624s 21s/step - loss: 0.0696 - acc: 0.9750 - val_loss: 0.0957 - val_acc: 0.9812
-
-Epoch 00003: val_loss improved from 0.13461 to 0.09569, saving model to chest_orientation_model.hdf5
-Epoch 4/50
-30/30 [==============================] - 569s 19s/step - loss: 0.0358 - acc: 0.9903 - val_loss: 0.0968 - val_acc: 0.9714
-
-Epoch 00004: val_loss did not improve from 0.09569
-Epoch 5/50
-30/30 [==============================] - 538s 18s/step - loss: 0.0231 - acc: 0.9917 - val_loss: 0.0642 - val_acc: 0.9853
-
-Epoch 00005: val_loss improved from 0.09569 to 0.06424, saving model to chest_orientation_model.hdf5
-Epoch 6/50
-30/30 [==============================] - 514s 17s/step - loss: 0.0195 - acc: 0.9930 - val_loss: 0.1021 - val_acc: 0.9657
-
-Epoch 00006: val_loss did not improve from 0.06424
-Epoch 7/50
-30/30 [==============================] - 503s 17s/step - loss: 0.0102 - acc: 0.9983 - val_loss: 0.0657 - val_acc: 0.9886
-
-Epoch 00007: val_loss did not improve from 0.06424
-Epoch 8/50
-30/30 [==============================] - 503s 17s/step - loss: 0.0164 - acc: 0.9950 - val_loss: 0.0807 - val_acc: 0.9804
-
-Epoch 00008: val_loss did not improve from 0.06424
-Epoch 9/50
-30/30 [==============================] - 513s 17s/step - loss: 0.0120 - acc: 0.9977 - val_loss: 0.1097 - val_acc: 0.9788
-
-Epoch 00009: val_loss did not improve from 0.06424
-Epoch 10/50
-30/30 [==============================] - 577s 19s/step - loss: 0.0025 - acc: 0.9993 - val_loss: 0.0929 - val_acc: 0.9804
-
-Epoch 00010: val_loss did not improve from 0.06424
-Epoch 00010: early stopping
-
-Out[10]:
-
-<keras.callbacks.History at 0x1295c4828>
-
-## Avaliação:[](https://render.githubusercontent.com/view/ipynb?commit=b237348ccff36ef09e1c4f3c76c4340fa942574c&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6e616e6461772f71636f6e5f6e6f7465626f6f6b2f623233373334386363666633366566303965316334663363373663343334306661393432353734632f4170726573656e746163616f5f51436f6e2e6970796e62&nwo=nandaw%2Fqcon_notebook&path=Apresentacao_QCon.ipynb&repository_id=186697313&repository_type=Repository#Avalia%C3%A7%C3%A3o:)
+## Avaliação:
 
 Sempre importante separar uma quantidade de dados para testar o modelo no final. Aqui faremos apenas um teste visual para efeito de demonstração
 
-In [3]:
 
 # Carregando imagens de teste
 import glob
@@ -294,6 +251,6 @@ for i in range(10):
                                   labels[true_index]),
                                   color=("green" if predict_index == true_index else "red"))
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDk1MjI5NTEsMTA5MjY0NjI0LDU1Mz
-gwMDA4OCwtMTEwMjMzNzM2MF19
+eyJoaXN0b3J5IjpbMTk1ODAwNjQ0OSwxMDkyNjQ2MjQsNTUzOD
+AwMDg4LC0xMTAyMzM3MzYwXX0=
 -->
