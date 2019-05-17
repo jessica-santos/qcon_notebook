@@ -214,8 +214,10 @@ model.fit_generator(generator=train_generator,
                     callbacks=[checkpoint, early_stop]
                     )
 ```
+--- explicacao
 
-
+![saida](https://github.com/jessica-santos/qcon_notebook/blob/master/output.png?raw=true)
+-- explicacao
 
 ## Avaliação:
 
@@ -254,6 +256,6 @@ for i in range(10):
                                   color=("green" if predict_index == true_index else "red"))
  ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM3NDg4NjYzLDEwOTI2NDYyNCw1NTM4MD
-AwODgsLTExMDIzMzczNjBdfQ==
+eyJoaXN0b3J5IjpbMTg0NTIxNjA0MywyMzc0ODg2NjMsMTA5Mj
+Y0NjI0LDU1MzgwMDA4OCwtMTEwMjMzNzM2MF19
 -->
