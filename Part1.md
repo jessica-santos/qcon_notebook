@@ -132,6 +132,8 @@ validation_generator = data_generator.flow_from_directory(path, shuffle=True, se
 
 ### 2. Definição da arquitetura
 
+O código abaixo define a arquitetura da rede:
+
 ```python
 def build_model(shape=(256,256)):
     '''
@@ -169,6 +171,6 @@ def build_model(shape=(256,256)):
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjkwMzU5MzAsNTUzODAwMDg4LC0xMT
-AyMzM3MzYwXX0=
+eyJoaXN0b3J5IjpbMTA5MjY0NjI0LDU1MzgwMDA4OCwtMTEwMj
+MzNzM2MF19
 -->
