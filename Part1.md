@@ -130,11 +130,11 @@ validation_generator = data_generator.flow_from_directory(path, shuffle=True, se
                                     class_mode='categorical', batch_size=BATCH_SIZE, subset="validation")
 ```
 
-Aqui estamos definindo apenas o `BATCH_SIZE`, ou seja, quantas imagens serão lidas por bloco, se 
+Aqui estamos definindo apenas o `BATCH_SIZE`, ou seja, quantas imagens serão lidas por bloco, se os dados serão lidos de forma aleatória (`shuffle=True`) e o `seed`. Outros parâmetros podem ser vistos na documentação do [keras](https://keras.io/preprocessing/image/#flow_from_directory).
 
 ### 2. Definição da arquitetura
 
-O código abaixo define a arquitetura da rede:
+O método abaixo define a arquitetura da rede:
 
 ```python
 def build_model(shape=(256,256)):
@@ -260,7 +260,7 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjE0MDk1NTYsLTg5MjA4ODAzNCwxOD
-Q1MjE2MDQzLDIzNzQ4ODY2MywxMDkyNjQ2MjQsNTUzODAwMDg4
-LC0xMTAyMzM3MzYwXX0=
+eyJoaXN0b3J5IjpbMjAwNjU3NDc1MCwtODkyMDg4MDM0LDE4ND
+UyMTYwNDMsMjM3NDg4NjYzLDEwOTI2NDYyNCw1NTM4MDAwODgs
+LTExMDIzMzczNjBdfQ==
 -->
