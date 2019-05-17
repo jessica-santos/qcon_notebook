@@ -117,6 +117,8 @@ data_generator = ImageDataGenerator(rescale=1./255, validation_split=0.30)
 A próxima etapa é passar quais dados serão lidos. Aqui também há diferentes métodos possíveis, os mais comuns são `flow_from_dataframe` que lê as imagens de acordo com os caminhos específicados em um dataframe, e `flow_from_directory`, que lê os arquivos direto de uma pasta, cada classe deve estar em uma pasta separada. 
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUzODAwMDg4LC0xMTAyMzM3MzYwXX0=
+eyJoaXN0b3J5IjpbMTY1OTUyNTU3NCw1NTM4MDAwODgsLTExMD
+IzMzczNjBdfQ==
 -->
