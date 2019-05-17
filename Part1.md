@@ -256,8 +256,9 @@ for i in range(10):
                                   color=("green" if predict_index == true_index else "red"))
  ```
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
+ ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNzM4NzQ5NywxODQ1MjE2MDQzLDIzNz
+eyJoaXN0b3J5IjpbLTg5MjA4ODAzNCwxODQ1MjE2MDQzLDIzNz
 Q4ODY2MywxMDkyNjQ2MjQsNTUzODAwMDg4LC0xMTAyMzM3MzYw
 XX0=
 -->
