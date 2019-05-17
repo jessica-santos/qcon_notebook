@@ -130,9 +130,45 @@ validation_generator = data_generator.flow_from_directory(path, shuffle=True, se
                                     class_mode='categorical', batch_size=BATCH_SIZE, subset="validation")
 ```
 
+### 2. Definição da arquitetura
+
+```python
+def build_model(shape=(256,256)):
+    '''
+ Constroi as camadas da rede
+ :return: modelo construido
+ '''
+    
+    model = Sequential()
+
+    # primeira camada adiciona o shape do input
+    # também é possível alterar a inicializacao, bias, entre outros -- https://keras.io/layers/convolutional/#conv2d
+    model.add(Conv2D(filters=64, kernel_size=2, activation='relu', input_shape=shape))
+    #Tamanho do downsampling
+    model.add(MaxPooling2D(pool_size=2))
+    # Fracao das unidades que serao zeradas
+    model.add(Dropout(0.3))
+
+    # Segunda camada
+    model.add(Conv2D(filters=128, kernel_size=2, activation='relu'))
+    model.add(MaxPooling2D(pool_size=2))
+    model.add(Dropout(0.3))
+
+    # Da um reshape no output transformando em array
+    model.add(Flatten())
+
+    # Camada full-connected 
+    model.add(Dense(256, activation='relu'))
+    model.add(Dropout(0.5))
+
+    #Camada de saida com o resultado das classes
+    model.add(Dense(2, activation='sigmoid'))
+
+    return model
+````
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MjA0NDk1Miw1NTM4MDAwODgsLTExMD
-IzMzczNjBdfQ==
+eyJoaXN0b3J5IjpbLTExNjkwMzU5MzAsNTUzODAwMDg4LC0xMT
+AyMzM3MzYwXX0=
 -->
