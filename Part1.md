@@ -184,7 +184,7 @@ model.compile(loss='binary_crossentropy',
              metrics=['accuracy'])
 ```
 
-Para este exemplo utilizamos o otimizador Adam, com os valores padrões (
+Para este exemplo utilizamos o otimizador Adam, com os valores padrões (`lr=0.001, beta_1=0.9, beta_2=0.999`), você pode aprender mais sobre ele [aqui](https://towardsdatascience.com/adam-latest-trends-in-deep-learning-optimization-6be9a291375c). 
 
 ## Treinamento
 Como lemos os dados usando um generator, o fit do keras também será usando um  `fit_generator`.
@@ -261,7 +261,7 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI2NjQ1ODAxLDIwMDY1NzQ3NTAsLTg5Mj
-A4ODAzNCwxODQ1MjE2MDQzLDIzNzQ4ODY2MywxMDkyNjQ2MjQs
-NTUzODAwMDg4LC0xMTAyMzM3MzYwXX0=
+eyJoaXN0b3J5IjpbLTgxNzM4NzQ5MSw2MjY2NDU4MDEsMjAwNj
+U3NDc1MCwtODkyMDg4MDM0LDE4NDUyMTYwNDMsMjM3NDg4NjYz
+LDEwOTI2NDYyNCw1NTM4MDAwODgsLTExMDIzMzczNjBdfQ==
 -->
