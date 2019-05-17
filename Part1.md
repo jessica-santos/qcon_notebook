@@ -175,7 +175,7 @@ def build_model(shape=(256,256)):
 
 # Compilação
 
-Precisamos definir como a rede irá aprender: função de loss e otimizador
+Precisamos definir como a rede irá aprender, isto é, qual a função de loss e o otimizador.
 
 ```python
 # Compila o modelo definindo: otimizador, metrica e loss function
@@ -183,7 +183,8 @@ model.compile(loss='binary_crossentropy',
              optimizer='adam',
              metrics=['accuracy'])
 ```
----- explicacao
+
+Para este exemplo utilizamos o otimizador Adam, com os valores padrões (
 
 ## Treinamento
 Como lemos os dados usando um generator, o fit do keras também será usando um  `fit_generator`.
@@ -260,7 +261,7 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNjU3NDc1MCwtODkyMDg4MDM0LDE4ND
-UyMTYwNDMsMjM3NDg4NjYzLDEwOTI2NDYyNCw1NTM4MDAwODgs
-LTExMDIzMzczNjBdfQ==
+eyJoaXN0b3J5IjpbNjI2NjQ1ODAxLDIwMDY1NzQ3NTAsLTg5Mj
+A4ODAzNCwxODQ1MjE2MDQzLDIzNzQ4ODY2MywxMDkyNjQ2MjQs
+NTUzODAwMDg4LC0xMTAyMzM3MzYwXX0=
 -->
