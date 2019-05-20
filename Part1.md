@@ -60,7 +60,7 @@ Vamos a prática!
 
 ## Construindo uma CNN pra predizer lateralidade do raio-X
 
-Nosso desafio é criar uma rede para aprender se um raio X é lateral ou de frente:
+Nosso desafio é criar uma rede para aprender se um raio X é lateral ou de frente. Esse é um dos poucos desafios da área médica que nós, leigos, conseguimos validar visualmente sem o auxílio de um médico:
 
 ![](https://github.com/nandaw/qcon_notebook/raw/b237348ccff36ef09e1c4f3c76c4340fa942574c/lateral.png)
 
@@ -263,7 +263,8 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MzMyOTQ3OCw2MjY2NDU4MDEsMjAwNj
-U3NDc1MCwtODkyMDg4MDM0LDE4NDUyMTYwNDMsMjM3NDg4NjYz
-LDEwOTI2NDYyNCw1NTM4MDAwODgsLTExMDIzMzczNjBdfQ==
+eyJoaXN0b3J5IjpbMTAxMDE5MzYyLDE1NDMzMjk0NzgsNjI2Nj
+Q1ODAxLDIwMDY1NzQ3NTAsLTg5MjA4ODAzNCwxODQ1MjE2MDQz
+LDIzNzQ4ODY2MywxMDkyNjQ2MjQsNTUzODAwMDg4LC0xMTAyMz
+M3MzYwXX0=
 -->
