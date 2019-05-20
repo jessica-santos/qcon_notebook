@@ -130,7 +130,7 @@ validation_generator = data_generator.flow_from_directory(path, shuffle=True, se
                                     class_mode='categorical', batch_size=BATCH_SIZE, subset="validation")
 ```
 
-Aqui estamos definindo apenas o `BATCH_SIZE`, ou seja, quantas imagens serão lidas por bloco, se os dados serão lidos de forma aleatória (`shuffle=True`) e o `seed`. Outros parâmetros podem ser vistos na documentação do [keras](https://keras.io/preprocessing/image/#flow_from_directory).
+Também definimos nesta etapa o `BATCH_SIZE`, ou seja, quantas imagens serão lidas por bloco, se os dados serão lidos de forma aleatória (`shuffle=True`) e o `seed`. Outros parâmetros podem ser vistos na documentação do [keras](https://keras.io/preprocessing/image/#flow_from_directory).
 
 ### 2. Definição da arquitetura
 
@@ -171,7 +171,7 @@ def build_model(shape=(256,256)):
     return model
 ````
 
------ explicacao
+
 
 # Compilação
 
@@ -263,7 +263,7 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNzk4NDk1NywxNTQzMzI5NDc4LDYyNj
+eyJoaXN0b3J5IjpbLTYyMDQ0ODA4MywxNTQzMzI5NDc4LDYyNj
 Y0NTgwMSwyMDA2NTc0NzUwLC04OTIwODgwMzQsMTg0NTIxNjA0
 MywyMzc0ODg2NjMsMTA5MjY0NjI0LDU1MzgwMDA4OCwtMTEwMj
 MzNzM2MF19
