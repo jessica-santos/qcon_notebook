@@ -163,7 +163,7 @@ model.add(Dropout(0.5))
 model.add(Dense(2, activation='sigmoid'))
 ````
 
-Os modelos do keras podem ser `Functional API` ou `Sequential`. Quando estamos definindo a nossa rede usamos o `Sequential` para definirmos as nossas camadas de forma sequencial. A primeira camada adicionada neste exemplo é uma convolucional com 64 filtros e dimensão do kernel de 2x2, 
+Os modelos do keras podem ser `Functional API` ou `Sequential`. Quando estamos definindo a nossa rede usamos o `Sequential` para definirmos as nossas camadas de forma sequencial. A primeira camada adicionada neste exemplo é uma convolucional com 64 filtros e dimensão de 2x2, com função de ativação `relu`. Essa é a função de ativação tradicionalmente utilizada nas camadas intermediárias, ela ativa os neurônios que tiveram resultados maiores que 0, para outras funções disponíveis pelo Keras veja [aqui](
 
 # Compilação
 
@@ -255,8 +255,8 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjQ1MjgxMTEsMTU0MzMyOTQ3OCw2Mj
-Y2NDU4MDEsMjAwNjU3NDc1MCwtODkyMDg4MDM0LDE4NDUyMTYw
-NDMsMjM3NDg4NjYzLDEwOTI2NDYyNCw1NTM4MDAwODgsLTExMD
-IzMzczNjBdfQ==
+eyJoaXN0b3J5IjpbMTI3OTQ0MjgwMywxNTQzMzI5NDc4LDYyNj
+Y0NTgwMSwyMDA2NTc0NzUwLC04OTIwODgwMzQsMTg0NTIxNjA0
+MywyMzc0ODg2NjMsMTA5MjY0NjI0LDU1MzgwMDA4OCwtMTEwMj
+MzNzM2MF19
 -->
