@@ -279,8 +279,5 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MjMxNjQwMCwxNTQzMzI5NDc4LDYyNj
-Y0NTgwMSwyMDA2NTc0NzUwLC04OTIwODgwMzQsMTg0NTIxNjA0
-MywyMzc0ODg2NjMsMTA5MjY0NjI0LDU1MzgwMDA4OCwtMTEwMj
-MzNzM2MF19
+eyJoaXN0b3J5IjpbMTg3MjMxNjQwMF19
 -->
