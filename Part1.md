@@ -1,4 +1,4 @@
-# Deep Learning com Keras e Tensor Flow
+# Deep Learning com Keras e Tensor Flow - Part 1
 
 > Entre o dias 06 e 08 de maio de 2019 participamos da [QCon SP](https://qconsp.com/). Um dos maiores eventos de tecnologia do Brasil, com maior público senior e mais de 80 palestras técnicas. Nele apresentamos a palestra *Deep Learning com Keras e Tensor Flow*, em breve disponível na [InfoQ](https://www.infoq.com/br/conferences/qconsp2019) e descrita neste post.
 
@@ -304,6 +304,6 @@ for i in range(10):
 Como podemos perceber, o modelo acerta bem quase todas as imagens separadas para teste, errando apenas a terceira imagem, provavelmente por estar de cabeça para baixo. Se quisemos corrigir esse tipo de erro poderíamos usar o image augmentor e gerar mais algumas imagens em diferentes posições.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxOTg2Mjc2MiwtMTUzNTIzNDgxMywxNj
-M5OTgwODQsMTAyNjcxODg2MiwxODcyMzE2NDAwXX0=
+eyJoaXN0b3J5IjpbLTE2NDY4MjU4OTcsLTE1MzUyMzQ4MTMsMT
+YzOTk4MDg0LDEwMjY3MTg4NjIsMTg3MjMxNjQwMF19
 -->
