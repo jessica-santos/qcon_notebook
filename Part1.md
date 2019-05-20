@@ -172,7 +172,7 @@ A primeira camada adicionada neste exemplo é uma convolucional com 64 filtros e
 model.add(Conv2D(filters=64, kernel_size=2, activation='relu', input_shape=(256,256)))
 ```
 
-Em seguida adicionamos uma camada de `MaxPooling`, uma camada que realiza o *downsampling* calculando um valor máximo de um 
+Em seguida adicionamos uma camada de `MaxPooling`, uma camada que realiza o *downsampling* calculando o valor máximo de cada *pool* como mostrado na Figure, para essa camada precisamos 
 
 # Compilação
 
@@ -264,8 +264,8 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4Mjk3MjMwOCwxNTQzMzI5NDc4LDYyNj
-Y0NTgwMSwyMDA2NTc0NzUwLC04OTIwODgwMzQsMTg0NTIxNjA0
-MywyMzc0ODg2NjMsMTA5MjY0NjI0LDU1MzgwMDA4OCwtMTEwMj
-MzNzM2MF19
+eyJoaXN0b3J5IjpbLTE2NDQ0NjU0MjksMTU0MzMyOTQ3OCw2Mj
+Y2NDU4MDEsMjAwNjU3NDc1MCwtODkyMDg4MDM0LDE4NDUyMTYw
+NDMsMjM3NDg4NjYzLDEwOTI2NDYyNCw1NTM4MDAwODgsLTExMD
+IzMzczNjBdfQ==
 -->
