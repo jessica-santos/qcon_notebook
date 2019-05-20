@@ -171,7 +171,7 @@ def build_model(shape=(256,256)):
     return model
 ````
 
-
+Os modelos do keras podem ser por `Functional API` ou `Sequential`. 
 
 # Compilação
 
@@ -263,8 +263,8 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMDQ0ODA4MywxNTQzMzI5NDc4LDYyNj
-Y0NTgwMSwyMDA2NTc0NzUwLC04OTIwODgwMzQsMTg0NTIxNjA0
-MywyMzc0ODg2NjMsMTA5MjY0NjI0LDU1MzgwMDA4OCwtMTEwMj
-MzNzM2MF19
+eyJoaXN0b3J5IjpbLTE3Njc3OTk0NTUsMTU0MzMyOTQ3OCw2Mj
+Y2NDU4MDEsMjAwNjU3NDc1MCwtODkyMDg4MDM0LDE4NDUyMTYw
+NDMsMjM3NDg4NjYzLDEwOTI2NDYyNCw1NTM4MDAwODgsLTExMD
+IzMzczNjBdfQ==
 -->
