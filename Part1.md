@@ -269,7 +269,13 @@ image_test = np.array([img_to_array(load_img(image_name, target_size=(256, 256),
 y_pred = model.predict(image_test)
 ```
 
-Precisamos carregar o modelo salvo, lembre-se que o modelo que treinou até a estiver em memória não é necessariamente o melhor, 
+Precisamos carregar o modelo salvo. Lembre-se que o modelo que treinou até a última época e estiver em memória não é necessariamente o melhor, o melhor foi salvo pelo `ModelCheckpoint`. 
+```python 
+model = load_model('chest_orientation_model.hdf5')
+```
+Depois carregamos as imagens de teste em memória usando os métodos do próprio keras:
+```
+
 
 
 ```python
@@ -291,6 +297,6 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzUyMzQ4MTMsMTYzOTk4MDg0LDEwMj
-Y3MTg4NjIsMTg3MjMxNjQwMF19
+eyJoaXN0b3J5IjpbMjExMzk3NDg2LC0xNTM1MjM0ODEzLDE2Mz
+k5ODA4NCwxMDI2NzE4ODYyLDE4NzIzMTY0MDBdfQ==
 -->
