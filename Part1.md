@@ -185,7 +185,7 @@ model.add(Dropout(0.3))
 ```
  > Cuidado para não exagerar na quantidade de dropouts nem na porcentagem ou acabará gerando *underfitting*
 
-Após as camadas convolucionais precisamos redimensionar as features para 1 dimensão. Aqui faremos isso utilizando uma `Flatten`. Poderíamos p
+Após as camadas convolucionais precisamos redimensionar as features para 1 dimensão. Aqui faremos isso utilizando uma `Flatten`.
 
 # Compilação
 
@@ -233,7 +233,7 @@ model.fit_generator(generator=train_generator,
                     callbacks=[checkpoint, early_stop]
                     )
 ```
---- explicacao
+Como faremos a leitura de dados com um `generator`, utilizaremos o `fit_generator` para o treinamento. A definição dos parâmetros é bem simples como é possível ver no código: passamos os generators 
 
 ![saida](https://github.com/jessica-santos/qcon_notebook/blob/master/output.png?raw=true)
 -- explicacao
@@ -277,8 +277,8 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg5NTgyMzM4LDE1NDMzMjk0NzgsNjI2Nj
-Q1ODAxLDIwMDY1NzQ3NTAsLTg5MjA4ODAzNCwxODQ1MjE2MDQz
-LDIzNzQ4ODY2MywxMDkyNjQ2MjQsNTUzODAwMDg4LC0xMTAyMz
-M3MzYwXX0=
+eyJoaXN0b3J5IjpbLTEzNDc5Mzc1MzgsMTU0MzMyOTQ3OCw2Mj
+Y2NDU4MDEsMjAwNjU3NDc1MCwtODkyMDg4MDM0LDE4NDUyMTYw
+NDMsMjM3NDg4NjYzLDEwOTI2NDYyNCw1NTM4MDAwODgsLTExMD
+IzMzczNjBdfQ==
 -->
