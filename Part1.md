@@ -282,7 +282,8 @@ E, por fim, fazemos a predição para estas imagens:
 y_pred = model.predict(image_test)
 ```
 
-Com as predições e os valores reais podemos calcular as métricas necessárias para validar nosso modelo. Geralmente utilizamos uma matriz de confusão ou calculamos métricas como
+Com as predições e os valores reais podemos calcular as métricas necessárias para validar nosso modelo. Geralmente utilizamos uma matriz de confusão ou calculamos métricas como precisão e sensibilidade, que são mais ou menos importantes de acordo com o problema. Porém, a fim de ilustrar melhor os resultados, iremos apenas visualizar os resultados para cada imagem.
+
 ```python
 y_true = [0,0,0,0,0,1,1,1,1,1]
 labels = ['Frente', 'Lateral']
@@ -300,8 +301,8 @@ for i in range(10):
                                   color=("green" if predict_index == true_index else "red"))
  ```
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
- ---- explicacao
+Como podemos perceber, o modelo acerta bem quase todas as imagens separadas para teste, errando apenas a terceira imagem, provavelmente por estar de cabeça para baixo. Se quisemos corrigir esse tipo de erro pord
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NTg4NzMwNCwtMTUzNTIzNDgxMywxNj
+eyJoaXN0b3J5IjpbMjA2NTIxMTMxMSwtMTUzNTIzNDgxMywxNj
 M5OTgwODQsMTAyNjcxODg2MiwxODcyMzE2NDAwXX0=
 -->
