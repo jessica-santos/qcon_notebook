@@ -173,9 +173,15 @@ model.add(Conv2D(filters=64, kernel_size=2, activation='relu', input_shape=(256,
 ```
 
 Em seguida adicionamos uma camada de `MaxPooling`, uma camada que realiza o *downsampling* calculando o valor máximo de cada *pool* como mostrado na figura, para essa camada precisamos apenas definir o tamanho do *pool*.
+```python
+model.add(MaxPooling2D(pool_size=2))
+```
 
 ![enter image description here](https://developers.google.com/machine-learning/practica/image-classification/images/maxpool_animation.gif)
-* Exemplo de funcionamento do MaxPooling, Fonte: [Google Deve](https://developers.google.com/machine-learning/practica/image-classification)*
+*Exemplo de funcionamento do MaxPooling, Fonte: [Google Developers: ML Practicum: Image Classification](https://developers.google.com/machine-learning/practica/image-classification)*
+
+Depois adicionamos uma cama
+
 # Compilação
 
 Precisamos definir como a rede irá aprender, isto é, qual a função de loss e o otimizador.
@@ -266,7 +272,7 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NTU1OTgzOCwxNTQzMzI5NDc4LDYyNj
+eyJoaXN0b3J5IjpbLTExMDM4NzAxMCwxNTQzMzI5NDc4LDYyNj
 Y0NTgwMSwyMDA2NTc0NzUwLC04OTIwODgwMzQsMTg0NTIxNjA0
 MywyMzc0ODg2NjMsMTA5MjY0NjI0LDU1MzgwMDA4OCwtMTEwMj
 MzNzM2MF19
