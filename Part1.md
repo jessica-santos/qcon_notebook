@@ -233,10 +233,12 @@ model.fit_generator(generator=train_generator,
                     callbacks=[checkpoint, early_stop]
                     )
 ```
-Como faremos a leitura de dados com um `generator`, utilizaremos o `fit_generator` para o treinamento. A definição dos parâmetros é bem simples como é possível ver no código: passamos os generators 
+Como faremos a leitura de dados com um `generator`, utilizaremos o `fit_generator` para o treinamento. A definição dos parâmetros é bem simples como é possível ver no código: passamos os generators, a quantidade de passos que será preciso no treinamento e na validação para ler todos os todos (total de dados dividido por tamanho do batch), a quantidade máxima de épocas e os callbacks já criados.
+
+O resultado do treinamento foi o seguinte:
 
 ![saida](https://github.com/jessica-santos/qcon_notebook/blob/master/output.png?raw=true)
--- explicacao
+ Como podemos ver, ape
 
 ## Avaliação:
 
@@ -277,8 +279,8 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDc5Mzc1MzgsMTU0MzMyOTQ3OCw2Mj
-Y2NDU4MDEsMjAwNjU3NDc1MCwtODkyMDg4MDM0LDE4NDUyMTYw
-NDMsMjM3NDg4NjYzLDEwOTI2NDYyNCw1NTM4MDAwODgsLTExMD
-IzMzczNjBdfQ==
+eyJoaXN0b3J5IjpbLTc4OTAzOTgwOSwxNTQzMzI5NDc4LDYyNj
+Y0NTgwMSwyMDA2NTc0NzUwLC04OTIwODgwMzQsMTg0NTIxNjA0
+MywyMzc0ODg2NjMsMTA5MjY0NjI0LDU1MzgwMDA4OCwtMTEwMj
+MzNzM2MF19
 -->
