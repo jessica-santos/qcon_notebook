@@ -274,10 +274,15 @@ Precisamos carregar o modelo salvo. Lembre-se que o modelo que treinou até a ú
 model = load_model('chest_orientation_model.hdf5')
 ```
 Depois carregamos as imagens de teste em memória usando os métodos do próprio keras:
+```python
+image_test = np.array([img_to_array(load_img(image_name, target_size=(256, 256), color_mode='rgb'))/255 for image_name in test_set])
+```
+E, por fim, fazemos a predição para estas imagens:
+```python
+y_pred = model.predict(image_test)
 ```
 
-
-
+Com as predições e os valores reais podemos calcular as métricas necessárias para validar nosso modelo. Geralmente utilizamos uma matriz de confusão ou calculamos métricas como
 ```python
 y_true = [0,0,0,0,0,1,1,1,1,1]
 labels = ['Frente', 'Lateral']
@@ -297,6 +302,6 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMzk3NDg2LC0xNTM1MjM0ODEzLDE2Mz
-k5ODA4NCwxMDI2NzE4ODYyLDE4NzIzMTY0MDBdfQ==
+eyJoaXN0b3J5IjpbMTA5NTg4NzMwNCwtMTUzNTIzNDgxMywxNj
+M5OTgwODQsMTAyNjcxODg2MiwxODcyMzE2NDAwXX0=
 -->
