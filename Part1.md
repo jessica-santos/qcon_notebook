@@ -301,8 +301,9 @@ for i in range(10):
                                   color=("green" if predict_index == true_index else "red"))
  ```
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
-Como podemos perceber, o modelo acerta bem quase todas as imagens separadas para teste, errando apenas a terceira imagem, provavelmente por estar de cabeça para baixo. Se quisemos corrigir esse tipo de erro pord
+Como podemos perceber, o modelo acerta bem quase todas as imagens separadas para teste, errando apenas a terceira imagem, provavelmente por estar de cabeça para baixo. Se quisemos corrigir esse tipo de erro poderíamos usar o image augmentor e gerar mais algumas imagens em diferentes posições.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NTIxMTMxMSwtMTUzNTIzNDgxMywxNj
+eyJoaXN0b3J5IjpbLTgxOTg2Mjc2MiwtMTUzNTIzNDgxMywxNj
 M5OTgwODQsMTAyNjcxODg2MiwxODcyMzE2NDAwXX0=
 -->
