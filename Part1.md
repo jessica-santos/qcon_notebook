@@ -198,7 +198,7 @@ model.add(Dense(2, activation='sigmoid'))
 Essa foi a arquitetura que nós definimos para o modelo em questão, as camadas usadas e seus respectivos tamanhos são totalmente parametrizáveis, recomendamos testar o modelo com diferentes arquiteturas para analisar os resultados.
 
 
-# Compilação
+### 3. Compilação
 
 Precisamos definir como a rede irá aprender, isto é, qual a função de loss e o otimizador.
 
@@ -212,7 +212,7 @@ model.compile(loss='binary_crossentropy',
 Para este exemplo utilizamos o otimizador Adam, com os valores padrões (`lr=0.001, beta_1=0.9, beta_2=0.999`), você pode aprender mais sobre ele [aqui](https://towardsdatascience.com/adam-latest-trends-in-deep-learning-optimization-6be9a291375c). 
 Para o cálculo do loss usamos a função padrão para classificação binária: `binary_crossentropy`.
 
-## Treinamento
+### 4. Treinamento
 Como lemos os dados usando um generator, o fit do keras também será usando um  `fit_generator`.
 
 Também usaremos alguns  `callbacks`:
@@ -251,7 +251,7 @@ O resultado do treinamento foi o seguinte:
 ![saida](https://github.com/jessica-santos/qcon_notebook/blob/master/output.png?raw=true)
  Como podemos ver, apesar de termos colocado como máximo 50 épocas, o modelo parou na 10a época devido ao `early_stop`. Conseguimos ver que ele parou mesmo de aprender na época 5, onde atingiu 0.9853 de acurácia na validação.
 
-## Avaliação:
+### 5. Avaliação:
 
 Sempre importante separar uma quantidade de dados para testar o modelo no final. Aqui faremos apenas um teste visual para efeito de demonstração
 
@@ -304,6 +304,6 @@ for i in range(10):
 Como podemos perceber, o modelo acerta bem quase todas as imagens separadas para teste, errando apenas a terceira imagem, provavelmente por estar de cabeça para baixo. Se quisemos corrigir esse tipo de erro poderíamos usar o image augmentor e gerar mais algumas imagens em diferentes posições.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDY4MjU4OTcsLTE1MzUyMzQ4MTMsMT
+eyJoaXN0b3J5IjpbLTEwNjg1NDI4ODEsLTE1MzUyMzQ4MTMsMT
 YzOTk4MDg0LDEwMjY3MTg4NjIsMTg3MjMxNjQwMF19
 -->
