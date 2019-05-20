@@ -195,7 +195,7 @@ model.add(Dense(256, activation='relu'))
 model.add(Dense(2, activation='sigmoid'))
 ```
 
-Essa foi a arquitetura que nós definimos para o modelo em questão
+Essa foi a arquitetura que nós definimos para o modelo em questão, as camadas usadas e seus respectivos tamanhos são totalmente parametrizáveis, recomendamos testar o modelo com diferentes arquiteturas para analisar os resultados.
 
 
 # Compilação
@@ -269,7 +269,7 @@ image_test = np.array([img_to_array(load_img(image_name, target_size=(256, 256),
 y_pred = model.predict(image_test)
 ```
 
----- explicacao
+
 
 ```python
 y_true = [0,0,0,0,0,1,1,1,1,1]
@@ -290,5 +290,6 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNjcxODg2MiwxODcyMzE2NDAwXX0=
+eyJoaXN0b3J5IjpbMTYzOTk4MDg0LDEwMjY3MTg4NjIsMTg3Mj
+MxNjQwMF19
 -->
