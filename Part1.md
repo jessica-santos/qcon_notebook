@@ -137,41 +137,33 @@ Também definimos nesta etapa o `BATCH_SIZE`, ou seja, quantas imagens serão li
 O método abaixo define a arquitetura da rede:
 
 ```python
-def build_model(shape=(256,256)):
-    '''
- Constroi as camadas da rede
- :return: modelo construido
- '''
-    
-    model = Sequential()
+model = Sequential()
 
-    # primeira camada adiciona o shape do input
-    # também é possível alterar a inicializacao, bias, entre outros -- https://keras.io/layers/convolutional/#conv2d
-    model.add(Conv2D(filters=64, kernel_size=2, activation='relu', input_shape=shape))
-    #Tamanho do downsampling
-    model.add(MaxPooling2D(pool_size=2))
-    # Fracao das unidades que serao zeradas
-    model.add(Dropout(0.3))
+# primeira camada adiciona o shape do input
+# também é possível alterar a inicializacao, bias, entre outros -- https://keras.io/layers/convolutional/#conv2d
+model.add(Conv2D(filters=64, kernel_size=2, activation='relu', input_shape=(256,256)))
+#Tamanho do downsampling
+model.add(MaxPooling2D(pool_size=2))
+# Fracao das unidades que serao zeradas
+model.add(Dropout(0.3))
 
-    # Segunda camada
-    model.add(Conv2D(filters=128, kernel_size=2, activation='relu'))
-    model.add(MaxPooling2D(pool_size=2))
-    model.add(Dropout(0.3))
+# Segunda camada
+model.add(Conv2D(filters=128, kernel_size=2, activation='relu'))
+model.add(MaxPooling2D(pool_size=2))
+model.add(Dropout(0.3))
 
-    # Da um reshape no output transformando em array
-    model.add(Flatten())
+# Da um reshape no output transformando em array
+model.add(Flatten())
 
-    # Camada full-connected 
-    model.add(Dense(256, activation='relu'))
-    model.add(Dropout(0.5))
+# Camada full-connected 
+model.add(Dense(256, activation='relu'))
+model.add(Dropout(0.5))
 
-    #Camada de saida com o resultado das classes
-    model.add(Dense(2, activation='sigmoid'))
-
-    return model
+#Camada de saida com o resultado das classes
+model.add(Dense(2, activation='sigmoid'))
 ````
 
-Os modelos do keras podem ser `Functional API` ou `Sequential`. Quando estamos definindo a nossa rede usamos o `Sequential` para definirmos as nossas camadas de forma sequencial. A primeira camada adicionada neste exemple é uma convolucional com 64 filtros e dimensão do kernel de 2x2, 
+Os modelos do keras podem ser `Functional API` ou `Sequential`. Quando estamos definindo a nossa rede usamos o `Sequential` para definirmos as nossas camadas de forma sequencial. A primeira camada adicionada neste exemplo é uma convolucional com 64 filtros e dimensão do kernel de 2x2, 
 
 # Compilação
 
@@ -263,7 +255,7 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTE3OTgxMjksMTU0MzMyOTQ3OCw2Mj
+eyJoaXN0b3J5IjpbLTIwMjQ1MjgxMTEsMTU0MzMyOTQ3OCw2Mj
 Y2NDU4MDEsMjAwNjU3NDc1MCwtODkyMDg4MDM0LDE4NDUyMTYw
 NDMsMjM3NDg4NjYzLDEwOTI2NDYyNCw1NTM4MDAwODgsLTExMD
 IzMzczNjBdfQ==
