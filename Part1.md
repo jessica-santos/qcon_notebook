@@ -189,7 +189,9 @@ Após as camadas convolucionais precisamos redimensionar as features para 1 dime
 ```python
 model.add(Flatten())
 ```
-Depois disso adicionamen
+Depois disso adicionamos uma camada `Densa` com 256 neurônios e por fim a câmada de saída com 2 neurônios (um para cada classe), e a função de ativação sigmóide, que retorna a probabilidade da instância ser daquela classe.
+
+
 
 
 # Compilação
@@ -284,5 +286,5 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI4NzA1OTYyLDE4NzIzMTY0MDBdfQ==
+eyJoaXN0b3J5IjpbNDkyOTE2Nzk5LDE4NzIzMTY0MDBdfQ==
 -->
