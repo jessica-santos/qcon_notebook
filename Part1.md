@@ -157,7 +157,6 @@ model.add(Flatten())
 
 # Camada full-connected 
 model.add(Dense(256, activation='relu'))
-model.add(Dropout(0.5))
 
 #Camada de saida com o resultado das classes
 model.add(Dense(2, activation='sigmoid'))
@@ -180,7 +179,13 @@ model.add(MaxPooling2D(pool_size=2))
 ![enter image description here](https://developers.google.com/machine-learning/practica/image-classification/images/maxpool_animation.gif)
 *Exemplo de funcionamento do MaxPooling, Fonte: [Google Developers: ML Practicum: Image Classification](https://developers.google.com/machine-learning/practica/image-classification)*
 
-Depois adicionamos uma camada de `Dropout`, uma das técnicas atualmente mais utilizadas para evitar overfitting. Ele aleatoriamente desativa uma porcentagem de neurônios durante cada época de treinamento. Precisamos apenas definir a porcentagem que queremos desativar 
+Depois adicionamos uma camada de `Dropout`, uma das técnicas atualmente mais utilizadas para evitar overfitting. Ele aleatoriamente desativa uma porcentagem de neurônios durante cada época de treinamento. Precisamos apenas definir a porcentagem que queremos desativar.
+```python
+model.add(Dropout(0.3))
+```
+ > Cuidado para não exagerar na quantidade de dropouts nem na porcentagem, poderá acabar gerando *underfitting*
+
+
 
 # Compilação
 
@@ -272,8 +277,8 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMzkzMzc5MSwxNTQzMzI5NDc4LDYyNj
-Y0NTgwMSwyMDA2NTc0NzUwLC04OTIwODgwMzQsMTg0NTIxNjA0
-MywyMzc0ODg2NjMsMTA5MjY0NjI0LDU1MzgwMDA4OCwtMTEwMj
-MzNzM2MF19
+eyJoaXN0b3J5IjpbMTI0MDk3NTYxLDE1NDMzMjk0NzgsNjI2Nj
+Q1ODAxLDIwMDY1NzQ3NTAsLTg5MjA4ODAzNCwxODQ1MjE2MDQz
+LDIzNzQ4ODY2MywxMDkyNjQ2MjQsNTUzODAwMDg4LC0xMTAyMz
+M3MzYwXX0=
 -->
