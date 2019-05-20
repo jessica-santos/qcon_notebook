@@ -180,7 +180,7 @@ model.add(MaxPooling2D(pool_size=2))
 ![enter image description here](https://developers.google.com/machine-learning/practica/image-classification/images/maxpool_animation.gif)
 *Exemplo de funcionamento do MaxPooling, Fonte: [Google Developers: ML Practicum: Image Classification](https://developers.google.com/machine-learning/practica/image-classification)*
 
-Depois adicionamos uma cama
+Depois adicionamos uma camada de `Dropout`, uma das técnicas atualmente mais utilizadas para evitar overfitting. Ele aleatoriamente desativa uma porcentagem de neurônios durante cada época de treinamento. Precisamos apenas definir a porcentagem que queremos desativar 
 
 # Compilação
 
@@ -272,7 +272,7 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDM4NzAxMCwxNTQzMzI5NDc4LDYyNj
+eyJoaXN0b3J5IjpbLTQyMzkzMzc5MSwxNTQzMzI5NDc4LDYyNj
 Y0NTgwMSwyMDA2NTc0NzUwLC04OTIwODgwMzQsMTg0NTIxNjA0
 MywyMzc0ODg2NjMsMTA5MjY0NjI0LDU1MzgwMDA4OCwtMTEwMj
 MzNzM2MF19
