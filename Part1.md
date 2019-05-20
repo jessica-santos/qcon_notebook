@@ -171,7 +171,7 @@ def build_model(shape=(256,256)):
     return model
 ````
 
-Os modelos do keras podem ser por `Functional API` ou `Sequential`. 
+Os modelos do keras podem ser `Functional API` ou `Sequential`. Quando estamos definindo a nossa rede usamos o `Sequential` para definirmos as nossas camadas de forma sequencial. A primeira camada adicionada neste exemple é uma convolucional com 64 filtros e dimensão do kernel de 2x2, 
 
 # Compilação
 
@@ -263,7 +263,7 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Njc3OTk0NTUsMTU0MzMyOTQ3OCw2Mj
+eyJoaXN0b3J5IjpbLTEzMTE3OTgxMjksMTU0MzMyOTQ3OCw2Mj
 Y2NDU4MDEsMjAwNjU3NDc1MCwtODkyMDg4MDM0LDE4NDUyMTYw
 NDMsMjM3NDg4NjYzLDEwOTI2NDYyNCw1NTM4MDAwODgsLTExMD
 IzMzczNjBdfQ==
