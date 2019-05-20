@@ -238,7 +238,7 @@ Como faremos a leitura de dados com um `generator`, utilizaremos o `fit_generato
 O resultado do treinamento foi o seguinte:
 
 ![saida](https://github.com/jessica-santos/qcon_notebook/blob/master/output.png?raw=true)
- Como podemos ver, ape
+ Como podemos ver, apesar de termos colocado como máximo 50 épocas, o modelo parou na 10a época devido ao `early_stop`. Conseguimos ver que ele parou mesmo de aprender na época 5, onde atingiu 0.9853 de acurácia na validação.
 
 ## Avaliação:
 
@@ -279,7 +279,7 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4OTAzOTgwOSwxNTQzMzI5NDc4LDYyNj
+eyJoaXN0b3J5IjpbMTg3MjMxNjQwMCwxNTQzMzI5NDc4LDYyNj
 Y0NTgwMSwyMDA2NTc0NzUwLC04OTIwODgwMzQsMTg0NTIxNjA0
 MywyMzc0ODg2NjMsMTA5MjY0NjI0LDU1MzgwMDA4OCwtMTEwMj
 MzNzM2MF19
