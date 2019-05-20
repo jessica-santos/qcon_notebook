@@ -185,7 +185,7 @@ model.add(Dropout(0.3))
 ```
  > Cuidado para não exagerar na quantidade de dropouts nem na porcentagem ou acabará gerando *underfitting*
 
-Após as camadas convolucionais precisamos 
+Após as camadas convolucionais precisamos redimensionar as features para 1 dimensão. Aqui faremos isso utilizando uma `Flatten`. Poderíamos p
 
 # Compilação
 
@@ -277,8 +277,8 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NzMxODU4NiwxNTQzMzI5NDc4LDYyNj
-Y0NTgwMSwyMDA2NTc0NzUwLC04OTIwODgwMzQsMTg0NTIxNjA0
-MywyMzc0ODg2NjMsMTA5MjY0NjI0LDU1MzgwMDA4OCwtMTEwMj
-MzNzM2MF19
+eyJoaXN0b3J5IjpbNDg5NTgyMzM4LDE1NDMzMjk0NzgsNjI2Nj
+Q1ODAxLDIwMDY1NzQ3NTAsLTg5MjA4ODAzNCwxODQ1MjE2MDQz
+LDIzNzQ4ODY2MywxMDkyNjQ2MjQsNTUzODAwMDg4LC0xMTAyMz
+M3MzYwXX0=
 -->
