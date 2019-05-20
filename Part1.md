@@ -269,6 +269,7 @@ image_test = np.array([img_to_array(load_img(image_name, target_size=(256, 256),
 y_pred = model.predict(image_test)
 ```
 
+Precisamos carregar o modelo salvo, lembre-se que o modelo que treinou até a estiver em memória não é necessariamente o melhor, 
 
 
 ```python
@@ -290,6 +291,6 @@ for i in range(10):
  ![enter image description here](https://github.com/jessica-santos/qcon_notebook/blob/master/result.png?raw=true)
  ---- explicacao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzOTk4MDg0LDEwMjY3MTg4NjIsMTg3Mj
-MxNjQwMF19
+eyJoaXN0b3J5IjpbLTE1MzUyMzQ4MTMsMTYzOTk4MDg0LDEwMj
+Y3MTg4NjIsMTg3MjMxNjQwMF19
 -->
