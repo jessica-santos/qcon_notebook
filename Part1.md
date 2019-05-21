@@ -246,7 +246,7 @@ model.fit_generator(generator=train_generator,
                     callbacks=[checkpoint, early_stop]
                     )
 ```
-Como faremos a leitura de dados com um `generator`, utilizaremos o `fit_generator` para o treinamento. Como é possível ver no código a definição dos parâmetros é bem simples: passamos os generators, a quantidade de passos que será preciso no treinamento e na validação por uma época, isto é, quantos batchs é preciso para terminar de ler todos os dados, a quantidade máxima de épocas e os callbacks já criados.
+Como faremos a leitura de dados com um `generator`, utilizaremos o `fit_generator` para o treinamento. Como é possível ver no código a definição dos parâmetros é bem simples: passamos os generators, a quantidade de passos que será preciso no treinamento e na validação por época, isto é, quantos batchs são precisos para terminar de ler todos os dados, a quantidade máxima de épocas e os callbacks já criados.
 
 O resultado do treinamento foi o seguinte:
 
@@ -306,7 +306,7 @@ for i in range(10):
 Como podemos perceber, o modelo acerta bem quase todas as imagens separadas para teste, errando apenas a terceira imagem, provavelmente por estar de cabeça para baixo. Se quisemos corrigir esse tipo de erro poderíamos usar o image augmentor e gerar mais algumas imagens em diferentes posições.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NDEzMzksLTE5NTAxNjMzNDMsLTEwNj
-g1NDI4ODEsLTE1MzUyMzQ4MTMsMTYzOTk4MDg0LDEwMjY3MTg4
-NjIsMTg3MjMxNjQwMF19
+eyJoaXN0b3J5IjpbLTk5NzE5NzE4NSwtMTk1MDE2MzM0MywtMT
+A2ODU0Mjg4MSwtMTUzNTIzNDgxMywxNjM5OTgwODQsMTAyNjcx
+ODg2MiwxODcyMzE2NDAwXX0=
 -->
