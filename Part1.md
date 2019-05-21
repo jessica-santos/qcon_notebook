@@ -25,6 +25,7 @@ Por trabalharmos com imagens médicas esse será nosso caso de uso, mais especif
 Um artigo recente publicado no [medium](https://towardsdatascience.com/which-deep-learning-framework-is-growing-fastest-3f77f14aa318) fez uma comparação entre as principais bibliotecas para Deep Learning e mostrou que Tensorflow é o que mais cresce e o que apresenta a maior demanda.
 
 ![enter image description here](https://cdn-images-1.medium.com/max/1600/1*c67KMUJj3waIlxnUJ1enTw.png)
+
 *Resultado do estudo realizado por [Jeff Hale](https://towardsdatascience.com/which-deep-learning-framework-is-growing-fastest-3f77f14aa318)*
 
 E porque então usar Keras? Keras roda em cima do Tensorflow e oferece uma linguagem muito mais amigável, fácil e rápida para escrever os modelos (já mencionamos que é muito mais fácil?)
@@ -304,7 +305,7 @@ for i in range(10):
 Como podemos perceber, o modelo acerta bem quase todas as imagens separadas para teste, errando apenas a terceira imagem, provavelmente por estar de cabeça para baixo. Se quisemos corrigir esse tipo de erro poderíamos usar o image augmentor e gerar mais algumas imagens em diferentes posições.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NzE4MTI5LC0xMDY4NTQyODgxLC0xNT
-M1MjM0ODEzLDE2Mzk5ODA4NCwxMDI2NzE4ODYyLDE4NzIzMTY0
-MDBdfQ==
+eyJoaXN0b3J5IjpbLTE1NTU2MjIwOSwtMTA2ODU0Mjg4MSwtMT
+UzNTIzNDgxMywxNjM5OTgwODQsMTAyNjcxODg2MiwxODcyMzE2
+NDAwXX0=
 -->
