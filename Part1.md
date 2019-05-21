@@ -28,6 +28,7 @@ Um artigo recente publicado no [medium](https://towardsdatascience.com/which-dee
 
 *Resultado do estudo realizado por [Jeff Hale](https://towardsdatascience.com/which-deep-learning-framework-is-growing-fastest-3f77f14aa318)*
 
+
 E porque então usar Keras? Keras roda em cima do Tensorflow e oferece uma linguagem muito mais amigável, fácil e rápida para escrever os modelos (já mencionamos que é muito mais fácil?)
 
 O Tensorflow anunciou recentemente sua [versão 2.0](https://www.tensorflow.org/alpha), que usa Keras como sua API de alto nível já integrada dentro do `tf.keras`. Portanto, continuaremos usando o Keras como framework para Deep Learning. (Ainda mais com esse novo mascote!)
@@ -305,7 +306,7 @@ for i in range(10):
 Como podemos perceber, o modelo acerta bem quase todas as imagens separadas para teste, errando apenas a terceira imagem, provavelmente por estar de cabeça para baixo. Se quisemos corrigir esse tipo de erro poderíamos usar o image augmentor e gerar mais algumas imagens em diferentes posições.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTU2MjIwOSwtMTA2ODU0Mjg4MSwtMT
-UzNTIzNDgxMywxNjM5OTgwODQsMTAyNjcxODg2MiwxODcyMzE2
-NDAwXX0=
+eyJoaXN0b3J5IjpbLTE5NTAxNjMzNDMsLTEwNjg1NDI4ODEsLT
+E1MzUyMzQ4MTMsMTYzOTk4MDg0LDEwMjY3MTg4NjIsMTg3MjMx
+NjQwMF19
 -->
