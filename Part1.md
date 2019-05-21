@@ -181,7 +181,7 @@ model.add(MaxPooling2D(pool_size=2))
 ![enter image description here](https://developers.google.com/machine-learning/practica/image-classification/images/maxpool_animation.gif)
 *Exemplo de funcionamento do MaxPooling, Fonte: [Google Developers: ML Practicum: Image Classification](https://developers.google.com/machine-learning/practica/image-classification)*
 
-Depois adicionamos uma camada de `Dropout`, uma das técnicas atualmente mais utilizadas para evitar overfitting. Ele aleatoriamente desativa uma porcentagem de neurônios durante cada época de treinamento. Precisamos apenas definir a porcentagem que queremos desativar.
+Depois adicionamos uma camada de `Dropout`, uma das técnicas atualmente mais utilizadas para evitar *overfitting*. Ele aleatoriamente desativa uma porcentagem de neurônios durante cada época de treinamento. Precisamos apenas definir a porcentagem que queremos desativar.
 ```python
 model.add(Dropout(0.3))
 ```
@@ -219,8 +219,8 @@ Como lemos os dados usando um generator, o fit do keras também será usando um 
 
 Também usaremos alguns  `callbacks`:
 
--   ModelCheckPoint para salvar o modelo que tiver o melhor loss durante o treinamento e,
--   EarlyStop para interromper o treinamento caso a rede pare de aprender.
+-   **ModelCheckPoint** para salvar o modelo que tiver o melhor loss durante o treinamento e,
+-   **EarlyStop** para interromper o treinamento caso a rede pare de aprender.
 
 ```python 
 checkpoint = ModelCheckpoint('chest_orientation_model.hdf5', 
@@ -306,7 +306,7 @@ for i in range(10):
 Como podemos perceber, o modelo acerta bem quase todas as imagens separadas para teste, errando apenas a terceira imagem, provavelmente por estar de cabeça para baixo. Se quisemos corrigir esse tipo de erro poderíamos usar o image augmentor e gerar mais algumas imagens em diferentes posições.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NzE5NzE4NSwtMTk1MDE2MzM0MywtMT
-A2ODU0Mjg4MSwtMTUzNTIzNDgxMywxNjM5OTgwODQsMTAyNjcx
-ODg2MiwxODcyMzE2NDAwXX0=
+eyJoaXN0b3J5IjpbLTEyNDI0NDI1MjcsLTk5NzE5NzE4NSwtMT
+k1MDE2MzM0MywtMTA2ODU0Mjg4MSwtMTUzNTIzNDgxMywxNjM5
+OTgwODQsMTAyNjcxODg2MiwxODcyMzE2NDAwXX0=
 -->
